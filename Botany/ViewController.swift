@@ -58,6 +58,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     func classify(image: UIImage) {
+        
         let buffer = image.buffer(with: CGSize(width:224, height:224))
         let prediction = try? flower.prediction(image: buffer!)
         
