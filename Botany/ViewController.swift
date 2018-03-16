@@ -12,6 +12,7 @@ import CoreML
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     let flower = Flower()
+    let plants = Oxford102()
     
     let imagePicker = UIImagePickerController()
     
@@ -53,6 +54,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
         self.previewImage.image = image
+
         classify(image: image)
         self.dismiss(animated: true, completion: nil)
     }
@@ -67,9 +69,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
     }
     
+    func classify(plant: UIImage) {
+        let buffer = plant.buffer(with: CGSize(width: 227, height: 227))
+        let prediction = try? plants.prediction(data: buffer!)
+        
+        predictionLabel.text = prediction!.classLabel
+        probability.text = "\(prediction!.featureNames)"
+    }
     
-
-
 }
 
 extension UIImage {
