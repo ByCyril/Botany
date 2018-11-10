@@ -8,30 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		016E81112196743C0065EBC7 /* BotanyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016E81102196743C0065EBC7 /* BotanyView.swift */; };
-		016E8113219674660065EBC7 /* Flowers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016E8112219674660065EBC7 /* Flowers.swift */; };
+		016E8113219674660065EBC7 /* ImageRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016E8112219674660065EBC7 /* ImageRecognition.swift */; };
 		016E811521968E990065EBC7 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016E811421968E990065EBC7 /* CameraController.swift */; };
 		016E81172196B55D0065EBC7 /* CustomClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016E81162196B55D0065EBC7 /* CustomClass.swift */; };
-		016E81192196BA0F0065EBC7 /* Books.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 016E81182196BA0F0065EBC7 /* Books.mlmodel */; };
+		016E811B2196C99D0065EBC7 /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016E811A2196C99C0065EBC7 /* ImageProcessor.swift */; };
+		016E811D2196D3230065EBC7 /* FlowerModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 016E811C2196D3230065EBC7 /* FlowerModel.mlmodel */; };
 		76F5ACB72050794100219D14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F5ACB62050794100219D14 /* AppDelegate.swift */; };
 		76F5ACB92050794100219D14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F5ACB82050794100219D14 /* ViewController.swift */; };
 		76F5ACBE2050794100219D14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76F5ACBD2050794100219D14 /* Assets.xcassets */; };
 		76F5ACC12050794100219D14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76F5ACBF2050794100219D14 /* LaunchScreen.storyboard */; };
-		76F5ACCC2050D09D00219D14 /* Flower.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 76F5ACCB2050D09D00219D14 /* Flower.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		016E81102196743C0065EBC7 /* BotanyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotanyView.swift; sourceTree = "<group>"; };
-		016E8112219674660065EBC7 /* Flowers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flowers.swift; sourceTree = "<group>"; };
+		016E8112219674660065EBC7 /* ImageRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRecognition.swift; sourceTree = "<group>"; };
 		016E811421968E990065EBC7 /* CameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		016E81162196B55D0065EBC7 /* CustomClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomClass.swift; sourceTree = "<group>"; };
-		016E81182196BA0F0065EBC7 /* Books.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Books.mlmodel; sourceTree = "<group>"; };
+		016E811A2196C99C0065EBC7 /* ImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
+		016E811C2196D3230065EBC7 /* FlowerModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FlowerModel.mlmodel; sourceTree = "<group>"; };
 		76F5ACB32050794100219D14 /* Botany.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Botany.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F5ACB62050794100219D14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76F5ACB82050794100219D14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		76F5ACBD2050794100219D14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76F5ACC02050794100219D14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76F5ACC22050794100219D14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		76F5ACCB2050D09D00219D14 /* Flower.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Flower.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +45,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		016E811E2196D4420065EBC7 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				016E811421968E990065EBC7 /* CameraController.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		016E811F2196D4480065EBC7 /* ImageRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				016E811C2196D3230065EBC7 /* FlowerModel.mlmodel */,
+				016E8112219674660065EBC7 /* ImageRecognition.swift */,
+				016E811A2196C99C0065EBC7 /* ImageProcessor.swift */,
+			);
+			path = ImageRecognition;
+			sourceTree = "<group>";
+		};
+		016E81202196D4530065EBC7 /* CustomClass */ = {
+			isa = PBXGroup;
+			children = (
+				016E81162196B55D0065EBC7 /* CustomClass.swift */,
+			);
+			path = CustomClass;
+			sourceTree = "<group>";
+		};
+		016E81212196D4590065EBC7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				016E81102196743C0065EBC7 /* BotanyView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		76F5ACAA2050794100219D14 = {
 			isa = PBXGroup;
 			children = (
@@ -65,12 +99,10 @@
 			isa = PBXGroup;
 			children = (
 				76F5ACB62050794100219D14 /* AppDelegate.swift */,
-				76F5ACCB2050D09D00219D14 /* Flower.mlmodel */,
-				016E81182196BA0F0065EBC7 /* Books.mlmodel */,
-				016E8112219674660065EBC7 /* Flowers.swift */,
-				016E81102196743C0065EBC7 /* BotanyView.swift */,
-				016E81162196B55D0065EBC7 /* CustomClass.swift */,
-				016E811421968E990065EBC7 /* CameraController.swift */,
+				016E81212196D4590065EBC7 /* View */,
+				016E81202196D4530065EBC7 /* CustomClass */,
+				016E811E2196D4420065EBC7 /* Camera */,
+				016E811F2196D4480065EBC7 /* ImageRecognition */,
 				76F5ACB82050794100219D14 /* ViewController.swift */,
 				76F5ACBD2050794100219D14 /* Assets.xcassets */,
 				76F5ACBF2050794100219D14 /* LaunchScreen.storyboard */,
@@ -151,11 +183,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				016E811521968E990065EBC7 /* CameraController.swift in Sources */,
-				76F5ACCC2050D09D00219D14 /* Flower.mlmodel in Sources */,
+				016E811B2196C99D0065EBC7 /* ImageProcessor.swift in Sources */,
 				76F5ACB92050794100219D14 /* ViewController.swift in Sources */,
-				016E81192196BA0F0065EBC7 /* Books.mlmodel in Sources */,
+				016E811D2196D3230065EBC7 /* FlowerModel.mlmodel in Sources */,
 				76F5ACB72050794100219D14 /* AppDelegate.swift in Sources */,
-				016E8113219674660065EBC7 /* Flowers.swift in Sources */,
+				016E8113219674660065EBC7 /* ImageRecognition.swift in Sources */,
 				016E81112196743C0065EBC7 /* BotanyView.swift in Sources */,
 				016E81172196B55D0065EBC7 /* CustomClass.swift in Sources */,
 			);

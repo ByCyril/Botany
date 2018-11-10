@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController, FlowersDelegate, CameraDelegate {
 
     var botanyView: BotanyView!
-    var flowerModel: Flowers!
+    var flowerModel: ImageRecognition!
     
     private var button: UIButton!
     
@@ -22,7 +22,7 @@ class ViewController: UIViewController, FlowersDelegate, CameraDelegate {
         self.botanyView.setTarget(#selector(ViewController.showCamera), target: self)
         self.view.addSubview(self.botanyView)
         
-        self.flowerModel = Flowers(Books().model)
+        self.flowerModel = ImageRecognition(FlowerModel().model)
         self.flowerModel.delegate = self
         
     }
@@ -39,8 +39,8 @@ class ViewController: UIViewController, FlowersDelegate, CameraDelegate {
     }
     
     func flowerPrediction(_ name: String, _ confidenceLevel: Double) {
-        self.botanyView.setLabel("Flower: \(name)\nConfidence Level: \(confidenceLevel)")
-        print(confidenceLevel)
+        self.botanyView.setLabel("Flower: \(name) Confidence Level: \(confidenceLevel)")
+        
     }
 }
 
