@@ -37,6 +37,9 @@ class Flowers {
                 let results = req.results as? [VNClassificationObservation]
                 let firstObservation = results!.first
                 
+                for r in results! {
+                    print(r.identifier, Double(r.confidence))
+                }
                 let label = firstObservation!.identifier
                 let confidenceLebel = Double(firstObservation!.confidence)
                 self.delegate.flowerPrediction(label, confidenceLebel)

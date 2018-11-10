@@ -10,6 +10,8 @@
 		016E81112196743C0065EBC7 /* BotanyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016E81102196743C0065EBC7 /* BotanyView.swift */; };
 		016E8113219674660065EBC7 /* Flowers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016E8112219674660065EBC7 /* Flowers.swift */; };
 		016E811521968E990065EBC7 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016E811421968E990065EBC7 /* CameraController.swift */; };
+		016E81172196B55D0065EBC7 /* CustomClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016E81162196B55D0065EBC7 /* CustomClass.swift */; };
+		016E81192196BA0F0065EBC7 /* Books.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 016E81182196BA0F0065EBC7 /* Books.mlmodel */; };
 		76F5ACB72050794100219D14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F5ACB62050794100219D14 /* AppDelegate.swift */; };
 		76F5ACB92050794100219D14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F5ACB82050794100219D14 /* ViewController.swift */; };
 		76F5ACBE2050794100219D14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76F5ACBD2050794100219D14 /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 		016E81102196743C0065EBC7 /* BotanyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotanyView.swift; sourceTree = "<group>"; };
 		016E8112219674660065EBC7 /* Flowers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flowers.swift; sourceTree = "<group>"; };
 		016E811421968E990065EBC7 /* CameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		016E81162196B55D0065EBC7 /* CustomClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomClass.swift; sourceTree = "<group>"; };
+		016E81182196BA0F0065EBC7 /* Books.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Books.mlmodel; sourceTree = "<group>"; };
 		76F5ACB32050794100219D14 /* Botany.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Botany.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F5ACB62050794100219D14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76F5ACB82050794100219D14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,8 +66,10 @@
 			children = (
 				76F5ACB62050794100219D14 /* AppDelegate.swift */,
 				76F5ACCB2050D09D00219D14 /* Flower.mlmodel */,
+				016E81182196BA0F0065EBC7 /* Books.mlmodel */,
 				016E8112219674660065EBC7 /* Flowers.swift */,
 				016E81102196743C0065EBC7 /* BotanyView.swift */,
+				016E81162196B55D0065EBC7 /* CustomClass.swift */,
 				016E811421968E990065EBC7 /* CameraController.swift */,
 				76F5ACB82050794100219D14 /* ViewController.swift */,
 				76F5ACBD2050794100219D14 /* Assets.xcassets */,
@@ -147,9 +153,11 @@
 				016E811521968E990065EBC7 /* CameraController.swift in Sources */,
 				76F5ACCC2050D09D00219D14 /* Flower.mlmodel in Sources */,
 				76F5ACB92050794100219D14 /* ViewController.swift in Sources */,
+				016E81192196BA0F0065EBC7 /* Books.mlmodel in Sources */,
 				76F5ACB72050794100219D14 /* AppDelegate.swift in Sources */,
 				016E8113219674660065EBC7 /* Flowers.swift in Sources */,
 				016E81112196743C0065EBC7 /* BotanyView.swift in Sources */,
+				016E81172196B55D0065EBC7 /* CustomClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +289,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R986STKYJ7;
 				INFOPLIST_FILE = Botany/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ByCyril.Botany;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -296,6 +305,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R986STKYJ7;
 				INFOPLIST_FILE = Botany/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ByCyril.Botany;
 				PRODUCT_NAME = "$(TARGET_NAME)";

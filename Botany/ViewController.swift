@@ -8,19 +8,39 @@
 
 import UIKit
 
-class ViewController: UIViewController, FlowersDelegate {
+class ViewController: UIViewController, FlowersDelegate, CameraDelegate {
 
-    let model = Flowers(Flower().model)
+    var botanyView: BotanyView!
+    var flowerModel: Flowers!
+    
+    private var button: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.botanyView = BotanyView(frame: self.view.frame)
+        self.botanyView.setTarget(#selector(ViewController.showCamera), target: self)
+        self.view.addSubview(self.botanyView)
+        
+        self.flowerModel = Flowers(Books().model)
+        self.flowerModel.delegate = self
         
     }
     
+    @objc func showCamera() {
+        let camera = CameraController()
+        camera.delegate = self
+        self.present(camera, animated: true, completion: nil)
+    }
+    
+    func getImage(_ image: UIImage) {
+        self.flowerModel.predict(image)
+        self.botanyView.setImage(image)
+    }
     
     func flowerPrediction(_ name: String, _ confidenceLevel: Double) {
-        
+        self.botanyView.setLabel("Flower: \(name)\nConfidence Level: \(confidenceLevel)")
+        print(confidenceLevel)
     }
 }
 
