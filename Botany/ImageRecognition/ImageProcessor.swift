@@ -9,8 +9,8 @@
 import CoreVideo
 
 struct ImageProcessor {
+
     static func pixelBuffer (forImage image:CGImage) -> CVPixelBuffer? {
-        
         
         let frameSize = CGSize(width: image.width, height: image.height)
         
